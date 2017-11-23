@@ -21,7 +21,7 @@ App = {
   },
 
   initContract: function() {
-    $.getJSON('KairosToken.json', function(data) {
+    $.getJSON('https://raw.githubusercontent.com/Alexintosh/KRS-ERC20-token/master/build/contracts/KairosToken.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with truffle-contract.
       var TutorialTokenArtifact = data;
       App.contracts.TutorialToken = TruffleContract(TutorialTokenArtifact);
